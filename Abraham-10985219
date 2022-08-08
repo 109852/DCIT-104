@@ -1,6 +1,7 @@
-num = input("Enter the ending value")
+num = input("Enter any number")
 num = int(num)
 sum = 0
+prime = 0
 
 #print numbers from 2 to n
 for i in range(2, num):
@@ -10,6 +11,8 @@ for i in range(2, num):
             break
     else:
         print(i)
+        prime = prime + 1
         sum = sum + i
 
-print("Sum of prime number is", sum)
+print("Sum of the prime numbers are", sum)
+print("Average of the numbers are",sum/prime)
